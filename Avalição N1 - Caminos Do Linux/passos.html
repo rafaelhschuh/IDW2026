@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiba como testar Linux por um Live USB, preparar um backup, entender dual boot e solicitar suporte.">
+    <title>Primeiros passos | Caminhos do Linux</title>
+</head>
+<body>
+    <header>
+        <h1>Primeiros passos</h1>
+        <p>Teste o sistema e confira o que precisa antes de instalar.</p>
+        <!-- Navegação principal -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="linux.html">Entendendo o Linux</a></li>
+                <li><a href="distros.html">Distribuições</a></li>
+                <li><a href="passos.html" aria-current="page">Primeiros passos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Experimente antes de instalar</h2>
+            <p>Um Live USB é um pendrive preparado para iniciar um sistema. Zorin OS e Linux Mint oferecem uma sessão de teste: você pode conhecer a interface sem instalar no disco interno. No Bazzite, consulte o guia da versão escolhida; não presuma que a mídia de instalação oferece o mesmo teste.</p>
+            <p>Outra opção é uma máquina virtual, que executa o sistema dentro do Windows. Ela ajuda a conhecer os menus, mas não representa bem o desempenho dos jogos ou a compatibilidade real dos dispositivos.</p>
+            <h3>O caminho básico com um pendrive</h3>
+            <ol>
+                <li>Baixe a imagem ISO no site oficial da distribuição e confira os requisitos e a integridade do arquivo conforme o guia.</li>
+                <li>Copie os arquivos importantes do pendrive para outro lugar. A gravação da imagem apaga seu conteúdo.</li>
+                <li>Use a ferramenta indicada no guia para gravar a ISO. Copiar o arquivo para o pendrive não basta.</li>
+                <li>Reinicie o computador e escolha o pendrive no menu de inicialização. A tecla desse menu varia conforme o fabricante.</li>
+                <li>Quando houver essa opção, escolha experimentar o sistema e teste rede, som, vídeo e teclado antes de abrir o instalador.</li>
+            </ol>
+            <p>Durante o teste, não altere as partições nem os arquivos do disco interno. Em uma sessão comum, sem persistência configurada, as alterações feitas no ambiente de teste se perdem ao desligar.</p>
+            <p>Veja os procedimentos completos nos guias de <a href="https://help.zorin.com/docs/getting-started/install-zorin-os/" target="_blank" rel="noopener noreferrer">instalação do Zorin OS</a>, <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/boot.html" target="_blank" rel="noopener noreferrer">teste do Linux Mint</a> e <a href="https://docs.bazzite.gg/General/Installation_Guide/" target="_blank" rel="noopener noreferrer">instalação do Bazzite</a>.</p>
+        </section>
+
+        <section>
+            <h2>Backup e cuidados com a instalação</h2>
+            <p><strong>Faça backup antes de mexer no disco.</strong> Guarde documentos, fotos e trabalhos em outro dispositivo ou serviço de armazenamento e abra alguns arquivos da cópia para conferir se estão acessíveis.</p>
+            <p>Tenha tempo para ler as telas do instalador. Se não entender uma opção de disco ou partição, consulte o guia antes de continuar.</p>
+            <ul>
+                <li>Confira o espaço disponível e os requisitos da distribuição.</li>
+                <li>Verifique se os programas da faculdade e seus jogos têm suporte ou alternativas adequadas.</li>
+                <li>Mantenha o notebook conectado à energia durante a instalação.</li>
+                <li>Se o Windows usar criptografia, como BitLocker, guarde a chave de recuperação antes de alterar a inicialização.</li>
+                <li>Leia qual disco será alterado. A opção de apagar o disco pode remover o Windows e seus arquivos.</li>
+            </ul>
+            <h3>O que é dual boot?</h3>
+            <p>Dual boot é manter dois sistemas instalados no mesmo computador e escolher qual iniciar ao ligá-lo. Eles não ficam rodando ao mesmo tempo. Isso permite continuar usando o Windows para tarefas que ainda dependem dele.</p>
+            <p>A configuração envolve dividir o espaço de armazenamento. Ela varia conforme o computador e a distribuição; não siga etapas de particionamento sem entender o que será alterado.</p>
+        </section>
+
+        <article>
+            <h2>Alguns comandos para conhecer o terminal</h2>
+            <p>Abra o terminal pelo menu de aplicativos. Digite um comando por vez e pressione Enter. Os exemplos abaixo não apagam arquivos e podem ser usados nas três distribuições.</p>
+            <dl>
+                <dt><code>pwd</code></dt>
+                <dd>Mostra o caminho da pasta em que o terminal está trabalhando.</dd>
+                <dt><code>ls</code></dt>
+                <dd>Lista os arquivos e pastas desse local. Itens ocultos não aparecem nessa listagem básica.</dd>
+                <dt><code>cd ~</code></dt>
+                <dd>Leva o terminal para sua pasta pessoal. O símbolo <code>~</code> representa essa pasta.</dd>
+                <dt><code>mkdir teste-linux</code></dt>
+                <dd>Cria uma pasta chamada <code>teste-linux</code> no local atual. Se ela já existir, o comando avisa.</dd>
+                <dt><code>cd teste-linux</code></dt>
+                <dd>Entra na pasta criada. O comando muda o local de trabalho do terminal, sem abrir uma janela.</dd>
+                <dt><code>cd ..</code></dt>
+                <dd>Volta para a pasta que contém a atual. Os dois pontos representam esse nível acima.</dd>
+            </dl>
+            <p>Para praticar, vá à pasta pessoal, crie a pasta de teste, entre nela e use <code>pwd</code> e <code>ls</code>. Você também pode encontrar essa pasta pelo gerenciador de arquivos.</p>
+            <p>Antes de copiar outros comandos da internet, procure entender o que fazem. Comandos de instalação e atualização variam entre distribuições.</p>
+        </article>
+
+        <section>
+            <h2 id="suporte">Solicitar suporte</h2>
+            <p>Tem alguma dúvida sobre Linux? Envie seu nome, e-mail e uma descrição do que precisa.</p>
+            <!-- Vídeo de Tima Miroshnichenko: https://www.pexels.com/video/person-typing-on-a-laptop-4841409/ -->
+            <video controls preload="metadata" aria-label="Pessoa usando um notebook">
+                <source src="Assets/computador.mp4" type="video/mp4">
+                Seu navegador não oferece suporte ao vídeo. <a href="Assets/computador.mp4">Baixe o arquivo para assistir</a>.
+            </video>
+            <!-- Formulário de suporte -->
+            <form action="https://ivanpires.dev/processa.php" method="post" aria-labelledby="suporte">
+                <fieldset>
+                    <legend>Seu pedido de suporte</legend>
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" maxlength="60" autocomplete="name" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="mensagem">Como podemos ajudar?</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="40" maxlength="2000" required></textarea>
+                    </p>
+                    <button type="submit">Enviar pedido</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Caminhos do Linux — projeto acadêmico de Introdução ao Desenvolvimento Web, 2º semestre.</p>
+    </footer>
+</body>
+</html>

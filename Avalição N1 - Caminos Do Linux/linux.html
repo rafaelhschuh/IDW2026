@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda o que é Linux, como funcionam as distribuições e o ambiente gráfico e o que significa software livre.">
+    <title>Entendendo o Linux | Caminhos do Linux</title>
+</head>
+<body>
+    <header>
+        <h1>Entendendo o Linux</h1>
+        <p>A base para entender o sistema sem se perder nos nomes.</p>
+        <!-- Navegação principal -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="linux.html" aria-current="page">Entendendo o Linux</a></li>
+                <li><a href="distros.html">Distribuições</a></li>
+                <li><a href="passos.html">Primeiros passos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Linux e distribuição: qual é a diferença?</h2>
+            <p>Todo sistema precisa de uma parte que organize o uso da memória, do processador e dos dispositivos. Essa parte é o núcleo, também chamado de <em>kernel</em>. Linux é um kernel.</p>
+            <p>Uma distribuição reúne esse núcleo, ferramentas, aplicativos e um jeito de instalar e atualizar tudo. É esse conjunto que você baixa para usar no computador. Zorin OS, Linux Mint e Bazzite são distribuições Linux.</p>
+            <p>A <a href="https://www.kernel.org/linux.html" target="_blank" rel="noopener noreferrer">explicação do projeto do kernel</a> faz essa distinção: para começar a usar o sistema, procure uma distribuição, e não o kernel isolado.</p>
+        </section>
+
+        <section>
+            <h2>O que muda para quem usa Windows</h2>
+            <p>Windows e uma distribuição Linux cumprem o mesmo papel no computador: oferecem um ambiente para executar programas e cuidar dos arquivos. O Windows é desenvolvido pela Microsoft; as distribuições são mantidas por diferentes empresas e comunidades.</p>
+            <p>Na prática, algumas diferenças aparecem logo no começo:</p>
+            <ul>
+                <li>Você pode escolher entre distribuições e interfaces com propostas diferentes.</li>
+                <li>Os aplicativos costumam vir de uma central de programas ou de repositórios mantidos pelos projetos.</li>
+                <li>Um instalador <code>.exe</code> do Windows não funciona diretamente como um aplicativo Linux. Pode ser necessário procurar uma versão própria ou uma alternativa.</li>
+            </ul>
+            <p><strong>A compatibilidade dos programas merece mais atenção que a aparência.</strong> Uma interface familiar ajuda, mas não garante que todas as ferramentas usadas no Windows estarão disponíveis.</p>
+        </section>
+
+        <article>
+            <h2>Software livre e um pouco de história</h2>
+            <p>Software livre permite executar, estudar, modificar e compartilhar um programa, respeitando sua licença. Para estudar e modificar, é preciso ter acesso ao código-fonte, o texto usado para construir o programa. <em>Livre</em> se refere a essas liberdades; o programa pode ser gratuito ou vendido.</p>
+            <p>O kernel Linux começou em <time datetime="1991">1991</time>, com Linus Torvalds. Seu desenvolvimento passou a receber contribuições de outras pessoas. Ferramentas do projeto GNU, que já trabalhava em um sistema livre, ajudaram a formar sistemas completos com esse núcleo.</p>
+            <p>Por isso, você também encontra o nome GNU/Linux. Muitas distribuições combinam software livre com componentes proprietários, como alguns drivers; usar Linux não significa que todos os programas instalados sejam livres.</p>
+            <p>Para consultar as fontes, leia a <a href="https://www.gnu.org/philosophy/free-sw.pt-br.html" target="_blank" rel="noopener noreferrer">definição de software livre do GNU</a> e o <a href="https://www.gnu.org/gnu/gnu-linux-faq.html" target="_blank" rel="noopener noreferrer">contexto sobre GNU e Linux</a>.</p>
+        </article>
+
+        <section>
+            <h2>O ambiente gráfico e o terminal</h2>
+            <p>O ambiente gráfico reúne os menus, as janelas, o painel e outras partes da interface. É o que permite abrir programas e organizar arquivos com o mouse. Cinnamon, GNOME e KDE Plasma são exemplos.</p>
+            <p>O terminal recebe instruções escritas. Ele pode ajudar a repetir tarefas ou investigar problemas, mas <strong>não é preciso passar o dia inteiro nele</strong>. Navegar na internet, editar documentos e instalar muitos aplicativos são tarefas que podem ser feitas pela interface gráfica.</p>
+            <h3>Um primeiro contato pela interface</h3>
+            <ol>
+                <li>Abra o menu de aplicativos e procure o navegador.</li>
+                <li>Use o gerenciador de arquivos para encontrar sua pasta pessoal.</li>
+                <li>Abra as configurações para conferir idioma, som e rede.</li>
+            </ol>
+            <p>Esse teste já mostra boa parte do que você usará no cotidiano.</p>
+        </section>
+
+        <section>
+            <h2>Termos que aparecem com frequência</h2>
+            <dl>
+                <dt>Distribuição ou distro</dt>
+                <dd>Sistema completo montado a partir do kernel Linux e de outros componentes.</dd>
+                <dt>Repositório</dt>
+                <dd>Local de onde o sistema obtém programas e atualizações. Prefira as fontes recomendadas pela distribuição.</dd>
+                <dt>Driver</dt>
+                <dd>Componente que permite ao sistema trabalhar com um dispositivo, como uma placa de vídeo ou impressora.</dd>
+                <dt>Imagem ISO</dt>
+                <dd>Arquivo que reúne o conteúdo usado para preparar uma mídia de instalação. Geralmente tem a extensão <code>.iso</code>.</dd>
+                <dt>Live USB</dt>
+                <dd>Pendrive preparado para iniciar um sistema. Nas distribuições que oferecem uma sessão de teste, ele permite experimentar antes de instalar. A sigla <abbr title="Universal Serial Bus">USB</abbr> vem de Universal Serial Bus, um padrão de conexão usado por esses dispositivos.</dd>
+                <dt>Partição</dt>
+                <dd>Divisão do espaço de um disco. Pode separar o Windows, o Linux e outras áreas de armazenamento.</dd>
+            </dl>
+            <p>Com esses nomes em mente, fica mais fácil <a href="distros.html">comparar as distribuições</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Caminhos do Linux — projeto acadêmico de Introdução ao Desenvolvimento Web, 2º semestre.</p>
+    </footer>
+</body>
+</html>
