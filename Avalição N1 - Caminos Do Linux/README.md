@@ -6,6 +6,6 @@
  - Pedro Henrique Monthay Melo
 
 
-### Limk: 
+### Link: 
 
-Clodflare: <https://idw2026.pages.dev/Avali%C3%A7%C3%A3o%20N1%20-%20Caminos%20Do%20Linux/>
+Cloudflare: <https://idw2026.pages.dev/Avali%C3%A7%C3%A3o%20N1%20-%20Caminos%20Do%20Linux/>
